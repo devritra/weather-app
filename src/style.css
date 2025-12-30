@@ -28,7 +28,10 @@ img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
-
+img{
+  height: 100%;
+  width: 100%;
+}
 /* 7. Inherit fonts for form controls */
 input, button, textarea, select {
   font: inherit;
@@ -55,3 +58,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --------CSS reset above-------- */
+
+/*colors*/
+:root{
+  --white: white;
+  --black: black;
+  /*homepage*/
+  --home-blue: #0089aa;
+  --home-light-blue: #00beed;
+  --color-heading-hero: var(--home-light-blue);
+  --color-underline-search: var(--home-blue);
+  --color-underline-search-btn: var(--home-blue);
+  --bg-color-search-btn: var(--home-blue);
+}
+
+.main{
+  height: 100vh;
+}
+
+/*----------home page styling----------*/
+.home_page_holder{
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hero_heading,
+.hero_para{
+  text-align: center;
+  color: var(--color-heading-hero);
+}
+.hero_heading{
+  font-size: 3rem;
+}
+.hero_para{
+  font-size: 1.5rem;
+}
+.home_search_form{
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.hero_section{
+  margin-bottom: 50px;
+}
+.home_search_input{
+  width: 60vw;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-underline-search);
+  background-color: rgb(255, 255, 255,0.1);
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.home_search_input::-webkit-search-cancel-button{
+  appearance: none;
+}
+.home_search_btn{
+  width: 50px;
+  border: none;
+  border-bottom: 2px solid var(--color-underline-search-btn);
+  background-color: var(--bg-color-search-btn);
+}
+.home_bg_image{
+  position: absolute;
+  z-index: -1;
+}
