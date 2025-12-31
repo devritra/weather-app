@@ -1,5 +1,5 @@
 import './style.css';
-// const homeSearchBtn = document.querySelector('.home_search_btn');
+
 const body = document.querySelector('body');
 
 body.addEventListener('click', (e)=>{
