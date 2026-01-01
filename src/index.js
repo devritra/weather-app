@@ -3,22 +3,37 @@ import './style.css';
 
 const body = document.querySelector('body');
 
-body.addEventListener('click', (e)=>{
-    if(e.target.dataset){
-        if(e.target.dataset.action){
-            switch (e.target.dataset.action){
-                case 'fetch_and_load':{
+body.addEventListener('click', (e) => {
+    if (e.target.dataset) {
+        if (e.target.dataset.action) {
+            switch (e.target.dataset.action) {
+                case 'fetch_and_load': {
                     e.preventDefault();
-                    const homeSearchInput = document.querySelector('.home_search_input');
-                    const location = homeSearchInput.value;
+                    let location;
+                    const homeSearchInput =
+                        document.querySelector('.home_search_input');
+                    if (homeSearchInput.value) {
+                        location = homeSearchInput.value;
+                        fetchAndLoad(location);
+                    }
                     // function that takes the location and fetch the weather data and load the data on the page
-                    fetchAndLoad(location);
                     break;
                 }
-                default:{
+                case 'data_fetch_and_load': {
+                    e.preventDefault();
+                    let location;
+                    const dataPageSearchInput = document.querySelector('.data_page_search_input');
+                    if (dataPageSearchInput.value) {
+                        location = dataPageSearchInput.value;
+                        fetchAndLoad(location);
+                    }
+                    // function that takes the location and fetch the weather data and load the data on the page
+                    break;
+                }
+                default: {
                     break;
                 }
             }
         }
     }
-})
+});

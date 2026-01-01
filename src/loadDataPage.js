@@ -32,7 +32,7 @@ export function loadDataPage(){
     dataPageSearchInput.placeholder = 'Search...';
     const dataPageSearchBtn = document.createElement('button');
     dataPageSearchBtn.classList.add('data_page_search_btn');
-    dataPageSearchBtn.dataset.action = 'fetch_and_load';
+    dataPageSearchBtn.dataset.action = 'data_fetch_and_load';
     const dataPageSearchSvg = document.createElementNS('http://www.w3.org/2000/svg','svg');
     dataPageSearchSvg.setAttribute('viewBox', '0 0 24 24');
     const svgTitle = document.createElement('title');
@@ -99,7 +99,6 @@ export function loadDataPage(){
     conditionCardDataName.textContent = 'Conditions'
     const conditionCardDataValue = document.createElement('p');
     conditionCardDataValue.classList.add('data_value');
-    conditionCardDataValue.textContent = '500'
     const conditionCardDataIcon = document.createElement('div');
     conditionCardDataIcon.classList.add('data_icon');
     conditionCard.appendChild(conditionCardDataName);

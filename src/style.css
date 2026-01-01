@@ -184,6 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .data_page_search_btn svg{
   width: 2.3rem;
+  pointer-events: none;
 }
 .data_page_search_input::-webkit-search-cancel-button{
   appearance: none;
@@ -195,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-bottom: 2px solid var(--color-underline-search);
   background-color: rgb(255, 255, 255,0.1);
-  color: var(--white);
+  color: var(--black);
   font-size: 1.2rem;
   flex: 1;
 }
