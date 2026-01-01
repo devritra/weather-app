@@ -159,4 +159,47 @@ export function loadDataPage(){
     feelsLikeCard.appendChild(feelsLikeCardDataName);
     feelsLikeCard.appendChild(feelsLikeCardDataValue);
     feelsLikeCard.appendChild(feelsLikeCardDataIcon);
+
+    const humidityHeading = document.createElement('h2');
+    humidityHeading.classList.add('humidity_heading');
+    humidityHeading.textContent = 'Humidity & Clouds';
+
+    const humidityCard = document.createElement('div');
+    humidityCard.classList.add('humidity_card');
+    humidityCard.classList.add('data_card');
+    const humidityCardDataName = document.createElement('p')
+    humidityCardDataName.classList.add('data_name');
+    const humidityCardDataValue = document.createElement('p');
+    humidityCardDataValue.classList.add('data_value');
+    const humidityCardDataIcon = document.createElement('div');
+    humidityCardDataIcon.classList.add('data_icon');
+    humidityCard.appendChild(humidityCardDataName);
+    humidityCard.appendChild(humidityCardDataValue);
+    humidityCard.appendChild(humidityCardDataIcon);
+
+    const cloudCoverCard = document.createElement('div');
+    cloudCoverCard.classList.add('cloud_cover_card');
+    cloudCoverCard.classList.add('data_card');
+    const cloudCoverCardDataName = document.createElement('p')
+    cloudCoverCardDataName.classList.add('data_name');
+    const cloudCoverCardDataValue = document.createElement('p');
+    cloudCoverCardDataValue.classList.add('data_value');
+    const cloudCoverCardDataIcon = document.createElement('div');
+    cloudCoverCardDataIcon.classList.add('data_icon');
+    cloudCoverCard.appendChild(cloudCoverCardDataName);
+    cloudCoverCard.appendChild(cloudCoverCardDataValue);
+    cloudCoverCard.appendChild(cloudCoverCardDataIcon);
+
+    const visibilityCard = document.createElement('div');
+    visibilityCard.classList.add('visbility_card');
+    visibilityCard.classList.add('data_card');
+    const visibilityCardDataName = document.createElement('p')
+    visibilityCardDataName.classList.add('data_name');
+    const visibilityCardDataValue = document.createElement('p');
+    visibilityCardDataValue.classList.add('data_value');
+    const visibilityCardDataIcon = document.createElement('div');
+    visibilityCardDataIcon.classList.add('data_icon');
+    visibilityCard.appendChild(visibilityCardDataName);
+    visibilityCard.appendChild(visibilityCardDataValue);
+    visibilityCard.appendChild(visibilityCardDataIcon);
 }
