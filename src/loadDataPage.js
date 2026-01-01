@@ -327,4 +327,34 @@ export function loadDataPage(){
     windDirectionCard.appendChild(windDirectionCardDataName);
     windDirectionCard.appendChild(windDirectionCardDataValue);
     windDirectionCard.appendChild(windDirectionCardDataIcon);
+
+    const astronomyHeading = document.createElement('h2');
+    astronomyHeading.classList.add('astronomy_heading');
+    astronomyHeading.textContent = 'Astronomy';
+
+    const sunriseCard = document.createElement('div');
+    sunriseCard.classList.add('sunrise_card');
+    sunriseCard.classList.add('data_card');
+    const sunriseCardDataName = document.createElement('p')
+    sunriseCardDataName.classList.add('data_name');
+    const sunriseCardDataValue = document.createElement('p');
+    sunriseCardDataValue.classList.add('data_value');
+    const sunriseCardDataIcon = document.createElement('div');
+    sunriseCardDataIcon.classList.add('data_icon');
+    sunriseCard.appendChild(sunriseCardDataName);
+    sunriseCard.appendChild(sunriseCardDataValue);
+    sunriseCard.appendChild(sunriseCardDataIcon);
+
+    const sunsetCard = document.createElement('div');
+    sunsetCard.classList.add('sunset_card');
+    sunsetCard.classList.add('data_card');
+    const sunsetCardDataName = document.createElement('p')
+    sunsetCardDataName.classList.add('data_name');
+    const sunsetCardDataValue = document.createElement('p');
+    sunsetCardDataValue.classList.add('data_value');
+    const sunsetCardDataIcon = document.createElement('div');
+    sunsetCardDataIcon.classList.add('data_icon');
+    sunsetCard.appendChild(sunsetCardDataName);
+    sunsetCard.appendChild(sunsetCardDataValue);
+    sunsetCard.appendChild(sunsetCardDataIcon);
 }
