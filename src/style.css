@@ -6,7 +6,7 @@
   /* 2. Remove default margin and padding*/
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 /* 3. Enable keyword animations */
@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 .home_search_btn svg{
   pointer-events: none;
   /*gotta set a width later*/
+  width: 3rem;
 }
 
 /*Error dialog box*/
