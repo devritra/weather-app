@@ -202,4 +202,86 @@ export function loadDataPage(){
     visibilityCard.appendChild(visibilityCardDataName);
     visibilityCard.appendChild(visibilityCardDataValue);
     visibilityCard.appendChild(visibilityCardDataIcon);
+
+    const precipitationHeading = document.createElement('h2');
+    precipitationHeading.classList.add('precipitation_heading');
+    precipitationHeading.textContent = 'Precipitation';
+
+    const precipitationTypeCard = document.createElement('div');
+    precipitationTypeCard.classList.add('precipitation_type_card');
+    precipitationTypeCard.classList.add('data_card');
+    const precipitationTypeCardDataName = document.createElement('p')
+    precipitationTypeCardDataName.classList.add('data_name');
+    const precipitationTypeCardDataValue = document.createElement('p');
+    precipitationTypeCardDataValue.classList.add('data_value');
+    const precipitationTypeCardDataIcon = document.createElement('div');
+    precipitationTypeCardDataIcon.classList.add('data_icon');
+    precipitationTypeCard.appendChild(precipitationTypeCardDataName);
+    precipitationTypeCard.appendChild(precipitationTypeCardDataValue);
+    precipitationTypeCard.appendChild(precipitationTypeCardDataIcon);
+
+    const precipitationChanceCard = document.createElement('div');
+    precipitationChanceCard.classList.add('precipitation_chance_card');
+    precipitationChanceCard.classList.add('data_card');
+    const precipitationChanceCardDataName = document.createElement('p')
+    precipitationChanceCardDataName.classList.add('data_name');
+    const precipitationChanceCardDataValue = document.createElement('p');
+    precipitationChanceCardDataValue.classList.add('data_value');
+    const precipitationChanceCardDataIcon = document.createElement('div');
+    precipitationChanceCardDataIcon.classList.add('data_icon');
+    precipitationChanceCard.appendChild(precipitationChanceCardDataName);
+    precipitationChanceCard.appendChild(precipitationChanceCardDataValue);
+    precipitationChanceCard.appendChild(precipitationChanceCardDataIcon);
+
+    const precipitationVolCard = document.createElement('div');
+    precipitationVolCard.classList.add('precipitation_vol_card');
+    precipitationVolCard.classList.add('data_card');
+    const precipitationVolCardDataName = document.createElement('p')
+    precipitationVolCardDataName.classList.add('data_name');
+    const precipitationVolCardDataValue = document.createElement('p');
+    precipitationVolCardDataValue.classList.add('data_value');
+    const precipitationVolCardDataIcon = document.createElement('div');
+    precipitationVolCardDataIcon.classList.add('data_icon');
+    precipitationVolCard.appendChild(precipitationVolCardDataName);
+    precipitationVolCard.appendChild(precipitationVolCardDataValue);
+    precipitationVolCard.appendChild(precipitationVolCardDataIcon);
+
+    const precipitationCoverCard = document.createElement('div');
+    precipitationCoverCard.classList.add('precipitation_cover_card');
+    precipitationCoverCard.classList.add('data_card');
+    const precipitationCoverCardDataName = document.createElement('p')
+    precipitationCoverCardDataName.classList.add('data_name');
+    const precipitationCoverCardDataValue = document.createElement('p');
+    precipitationCoverCardDataValue.classList.add('data_value');
+    const precipitationCoverCardDataIcon = document.createElement('div');
+    precipitationCoverCardDataIcon.classList.add('data_icon');
+    precipitationCoverCard.appendChild(precipitationCoverCardDataName);
+    precipitationCoverCard.appendChild(precipitationCoverCardDataValue);
+    precipitationCoverCard.appendChild(precipitationCoverCardDataIcon);
+
+    const snowfallCard = document.createElement('div');
+    snowfallCard.classList.add('snowfall_card');
+    snowfallCard.classList.add('data_card');
+    const snowfallCardDataName = document.createElement('p')
+    snowfallCardDataName.classList.add('data_name');
+    const snowfallCardDataValue = document.createElement('p');
+    snowfallCardDataValue.classList.add('data_value');
+    const snowfallCardDataIcon = document.createElement('div');
+    snowfallCardDataIcon.classList.add('data_icon');
+    snowfallCard.appendChild(snowfallCardDataName);
+    snowfallCard.appendChild(snowfallCardDataValue);
+    snowfallCard.appendChild(snowfallCardDataIcon);
+
+    const snowDepthCard = document.createElement('div');
+    snowDepthCard.classList.add('snow_depth_card');
+    snowDepthCard.classList.add('data_card');
+    const snowDepthCardDataName = document.createElement('p')
+    snowDepthCardDataName.classList.add('data_name');
+    const snowDepthCardDataValue = document.createElement('p');
+    snowDepthCardDataValue.classList.add('data_value');
+    const snowDepthCardDataIcon = document.createElement('div');
+    snowDepthCardDataIcon.classList.add('data_icon');
+    snowDepthCard.appendChild(snowDepthCardDataName);
+    snowDepthCard.appendChild(snowDepthCardDataValue);
+    snowDepthCard.appendChild(snowDepthCardDataIcon);
 }
