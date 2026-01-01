@@ -1,3 +1,5 @@
+import { setCurrentPage } from "./storeStateOfPage";
+
 export function loadDataPage(){
     const main = document.querySelector('.main');
     main.innerHTML = '';
@@ -568,4 +570,6 @@ export function loadDataPage(){
     dataPageHolder.appendChild(dataPageLeft);
     dataPageHolder.appendChild(dataPageRight);
     main.appendChild(dataPageHolder);
+
+    setCurrentPage('data');
 }
