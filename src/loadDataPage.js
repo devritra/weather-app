@@ -357,4 +357,34 @@ export function loadDataPage(){
     sunsetCard.appendChild(sunsetCardDataName);
     sunsetCard.appendChild(sunsetCardDataValue);
     sunsetCard.appendChild(sunsetCardDataIcon);
+
+    dataPageRight.appendChild(introData)
+    dataPageRight.appendChild(conditionCard);
+    dataPageRight.appendChild(tempHeading);
+    dataPageRight.appendChild(tempMaxCard);
+    dataPageRight.appendChild(tempMinCard);
+    dataPageRight.appendChild(tempAvgCard);
+    dataPageRight.appendChild(feelsLikeCard);
+    dataPageRight.appendChild(humidityHeading);
+    dataPageRight.appendChild(humidityCard);
+    dataPageRight.appendChild(cloudCoverCard);
+    dataPageRight.appendChild(visibilityCard);
+    dataPageRight.appendChild(precipitationHeading);
+    dataPageRight.appendChild(precipitationTypeCard);
+    dataPageRight.appendChild(precipitationChanceCard);
+    dataPageRight.appendChild(precipitationVolCard);
+    dataPageRight.appendChild(precipitationCoverCard);
+    dataPageRight.appendChild(snowfallCard);
+    dataPageRight.appendChild(snowDepthCard);
+    dataPageRight.appendChild(windHeading);
+    dataPageRight.appendChild(windSpeedCard);
+    dataPageRight.appendChild(windGustCard);
+    dataPageRight.appendChild(windDirectionCard);
+    dataPageRight.appendChild(astronomyHeading);
+    dataPageRight.appendChild(sunriseCard);
+    dataPageRight.appendChild(sunsetCard);
+    // final appending
+    dataPageHolder.appendChild(dataPageLeft);
+    dataPageHolder.appendChild(dataPageRight);
+    main.appendChild(dataPageHolder);
 }
