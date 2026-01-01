@@ -90,4 +90,73 @@ export function loadDataPage(){
     introBottom.appendChild(introIconHolder);
     introData.appendChild(introTop);
     introData.appendChild(introBottom);
+
+    const conditionCard = document.createElement('div');
+    conditionCard.classList.add('condition_card');
+    conditionCard.classList.add('data_card');
+    const conditionCardDataName = document.createElement('p')
+    conditionCardDataName.classList.add('data_name');
+    const conditionCardDataValue = document.createElement('p');
+    conditionCardDataValue.classList.add('data_value');
+    const conditionCardDataIcon = document.createElement('div');
+    conditionCardDataIcon.classList.add('data_icon');
+    conditionCard.appendChild(conditionCardDataName);
+    conditionCard.appendChild(conditionCardDataValue);
+    conditionCard.appendChild(conditionCardDataIcon);
+
+    const tempHeading = document.createElement('h2');
+    tempHeading.classList.add('temp_heading');
+    tempHeading.textContent = 'Temperature';
+
+    const tempMaxCard = document.createElement('div');
+    tempMaxCard.classList.add('tempmax_card');
+    tempMaxCard.classList.add('data_card');
+    const tempMaxCardDataName = document.createElement('p')
+    tempMaxCardDataName.classList.add('data_name');
+    const tempMaxCardDataValue = document.createElement('p');
+    tempMaxCardDataValue.classList.add('data_value');
+    const tempMaxCardDataIcon = document.createElement('div');
+    tempMaxCardDataIcon.classList.add('data_icon');
+    tempMaxCard.appendChild(tempMaxCardDataName);
+    tempMaxCard.appendChild(tempMaxCardDataValue);
+    tempMaxCard.appendChild(tempMaxCardDataIcon);
+
+    const tempMinCard = document.createElement('div');
+    tempMinCard.classList.add('tempmin_card');
+    tempMinCard.classList.add('data_card');
+    const tempMinCardDataName = document.createElement('p')
+    tempMinCardDataName.classList.add('data_name');
+    const tempMinCardDataValue = document.createElement('p');
+    tempMinCardDataValue.classList.add('data_value');
+    const tempMinCardDataIcon = document.createElement('div');
+    tempMinCardDataIcon.classList.add('data_icon');
+    tempMinCard.appendChild(tempMinCardDataName);
+    tempMinCard.appendChild(tempMinCardDataValue);
+    tempMinCard.appendChild(tempMinCardDataIcon);
+
+    const tempAvgCard = document.createElement('div');
+    tempAvgCard.classList.add('tempavg_card');
+    tempAvgCard.classList.add('data_card');
+    const tempAvgCardDataName = document.createElement('p')
+    tempAvgCardDataName.classList.add('data_name');
+    const tempAvgCardDataValue = document.createElement('p');
+    tempAvgCardDataValue.classList.add('data_value');
+    const tempAvgCardDataIcon = document.createElement('div');
+    tempAvgCardDataIcon.classList.add('data_icon');
+    tempAvgCard.appendChild(tempAvgCardDataName);
+    tempAvgCard.appendChild(tempAvgCardDataValue);
+    tempAvgCard.appendChild(tempAvgCardDataIcon);
+
+    const feelsLikeCard = document.createElement('div');
+    feelsLikeCard.classList.add('feelslike_card');
+    feelsLikeCard.classList.add('data_card');
+    const feelsLikeCardDataName = document.createElement('p')
+    feelsLikeCardDataName.classList.add('data_name');
+    const feelsLikeCardDataValue = document.createElement('p');
+    feelsLikeCardDataValue.classList.add('data_value');
+    const feelsLikeCardDataIcon = document.createElement('div');
+    feelsLikeCardDataIcon.classList.add('data_icon');
+    feelsLikeCard.appendChild(feelsLikeCardDataName);
+    feelsLikeCard.appendChild(feelsLikeCardDataValue);
+    feelsLikeCard.appendChild(feelsLikeCardDataIcon);
 }
