@@ -284,4 +284,47 @@ export function loadDataPage(){
     snowDepthCard.appendChild(snowDepthCardDataName);
     snowDepthCard.appendChild(snowDepthCardDataValue);
     snowDepthCard.appendChild(snowDepthCardDataIcon);
+
+    const windHeading = document.createElement('h2');
+    windHeading.classList.add('wind_heading');
+    windHeading.textContent = 'Wind & Pressure';
+
+    const windSpeedCard = document.createElement('div');
+    windSpeedCard.classList.add('wind_speed_card');
+    windSpeedCard.classList.add('data_card');
+    const windSpeedCardDataName = document.createElement('p')
+    windSpeedCardDataName.classList.add('data_name');
+    const windSpeedCardDataValue = document.createElement('p');
+    windSpeedCardDataValue.classList.add('data_value');
+    const windSpeedCardDataIcon = document.createElement('div');
+    windSpeedCardDataIcon.classList.add('data_icon');
+    windSpeedCard.appendChild(windSpeedCardDataName);
+    windSpeedCard.appendChild(windSpeedCardDataValue);
+    windSpeedCard.appendChild(windSpeedCardDataIcon);
+
+    const windGustCard = document.createElement('div');
+    windGustCard.classList.add('wind_gust_card');
+    windGustCard.classList.add('data_card');
+    const windGustCardDataName = document.createElement('p')
+    windGustCardDataName.classList.add('data_name');
+    const windGustCardDataValue = document.createElement('p');
+    windGustCardDataValue.classList.add('data_value');
+    const windGustCardDataIcon = document.createElement('div');
+    windGustCardDataIcon.classList.add('data_icon');
+    windGustCard.appendChild(windGustCardDataName);
+    windGustCard.appendChild(windGustCardDataValue);
+    windGustCard.appendChild(windGustCardDataIcon);
+
+    const windDirectionCard = document.createElement('div');
+    windDirectionCard.classList.add('wind_direction_card');
+    windDirectionCard.classList.add('data_card');
+    const windDirectionCardDataName = document.createElement('p')
+    windDirectionCardDataName.classList.add('data_name');
+    const windDirectionCardDataValue = document.createElement('p');
+    windDirectionCardDataValue.classList.add('data_value');
+    const windDirectionCardDataIcon = document.createElement('div');
+    windDirectionCardDataIcon.classList.add('data_icon');
+    windDirectionCard.appendChild(windDirectionCardDataName);
+    windDirectionCard.appendChild(windDirectionCardDataValue);
+    windDirectionCard.appendChild(windDirectionCardDataIcon);
 }
