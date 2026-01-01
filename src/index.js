@@ -1,4 +1,5 @@
 import { fetchAndLoad } from './fetchAndLoad';
+import { loadHome } from './loadHome';
 import './style.css';
 
 const body = document.querySelector('body');
@@ -28,6 +29,11 @@ body.addEventListener('click', (e) => {
                         fetchAndLoad(location);
                     }
                     // function that takes the location and fetch the weather data and load the data on the page
+                    break;
+                }
+                case 'load_home': {
+                    // function that loads home
+                    loadHome();
                     break;
                 }
                 default: {
