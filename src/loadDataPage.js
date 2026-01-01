@@ -1,5 +1,6 @@
 export function loadDataPage(){
     const main = document.querySelector('.main');
+    main.innerHTML = '';
     // data page holder
     const dataPageHolder = document.createElement('div');
     dataPageHolder.classList.add('data_page_holder');
@@ -65,6 +66,28 @@ export function loadDataPage(){
     dataPageLeft.appendChild(assistDisplay);
     dataPageLeft.appendChild(changeUnitBtnHolder);
     // data page right
+    const dataPageRight = document.createElement('div');
+    dataPageRight.classList.add('data_page_right');
 
-    main.innerHTML = '';
+    const introData = document.createElement('div');
+    introData.classList.add('intro_data');
+    const introTop = document.createElement('div');
+    introTop.classList.add('intro_top');
+    const introTempDisplay = document.createElement('p');
+    introTempDisplay.classList.add('intro_temp_display');
+    const introBottom = document.createElement('div');
+    introBottom.classList.add('intro_bottom');
+    const introLocationInfoHolder = document.createElement('div');
+    introLocationInfoHolder.classList.add('intro_location_info_holder');
+    const locationName = document.createElement('p');
+    const locationDateAndTime = document.createElement('p');
+    const introIconHolder = document.createElement('div');
+    introIconHolder.classList.add('intro_icon_holder');
+    introTop.appendChild(introTempDisplay);
+    introLocationInfoHolder.appendChild(locationName);
+    introLocationInfoHolder.appendChild(locationDateAndTime);
+    introBottom.appendChild(introLocationInfoHolder);
+    introBottom.appendChild(introIconHolder);
+    introData.appendChild(introTop);
+    introData.appendChild(introBottom);
 }
