@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 2fr 3fr;
   padding: 30px;
-  gap: 200px;
+  gap: 15vw;
   height: 100%;
 }
 /*left*/
@@ -237,9 +237,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
   display: grid;
   grid-template-columns: 4fr 4fr 1fr;
+  align-items: center;
 }
 .data_page_right{
   display: grid;
   gap: 5px;
   overflow: auto;
+  padding: 10px;
+}
+.data_page_right>.data_card>p{
+  padding-left: 10px;
+}
+.data_page_right>.data_card>p+p{
+  text-align: end;
+}
+.data_page_right>.data_card>div>svg{
+  width: 1.8rem;
 }
