@@ -6,9 +6,13 @@
         <title>Weather app</title>
     </head>
     <body>
-        <div class="main">
+        <!-- 
+        added the style with opacity 0 to prevent the unstyled html content to show up before css file loads.
+        later I set the opacity back to 1 with javaScript
+        -->
+        <div class="main" style="opacity: 0;">
             <div>
-                <img class="home_bg_image" src="./assets/bg images/homeBgImage.jpg" alt="">
+                <img class="home_bg_image" src="./assets/images/bg-image-home.jpg" alt="">
             </div>
             <div class="home_page_holder">
                 <div class="hero_section">

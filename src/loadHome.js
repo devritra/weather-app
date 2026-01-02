@@ -1,12 +1,17 @@
 import { setCurrentPage } from "./storeStateOfPage";
+import bgImageHome from './assets/images/bg-image-home.jpg';
+const main = document.querySelector('.main');
+// opacity set back to 0
+main.style.opacity = '1';
 
 export function loadHome(){
     const main = document.querySelector('.main');
     main.innerHTML = '';
     const homeBgImageHolder = document.createElement('div');
-    const homeBgImage = document.createElement('img');
+    // const homeBgImage = document.createElement('img');
+    const homeBgImage = new Image();
     homeBgImage.classList.add('home_bg_image');
-    homeBgImage.src = './assets/bg images/homeBgImage.jpg';
+    homeBgImage.src = bgImageHome;
     homeBgImageHolder.appendChild(homeBgImage);
     main.appendChild(homeBgImageHolder);
 

@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // eslint-disable-next-line no-undef
 module.exports = {
-    entry: './src/index.js',
+    entry: ['./src/index.js','./src/loadHome.js'],
     output: {
         filename: 'main.js',
         // eslint-disable-next-line no-undef
