@@ -7,10 +7,13 @@ export async function fetchAndLoad(location) {
     // function that shows a loading screen
     const response = await fetchWeatherData(location);
     // function that removes the loading screen
-    console.log(response);
-    const currentPage = getCurrentPage();
-    if(currentPage === 'home'){
-        loadDataPage();
+    if(response){
+        console.log(response);
+        const currentPage = getCurrentPage();
+        if(currentPage === 'home'){
+            loadDataPage();
+        }
+        displayWeatherData(response);
     }
-    displayWeatherData(response);
+    return;
 }
