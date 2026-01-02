@@ -1,4 +1,5 @@
 function showSvg(elem, iconID){
+    elem.innerHTML = '';
     const iconId = iconID;
     switch (iconId) {
         case 'snow':{
