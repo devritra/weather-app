@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 :root{
   --white: white;
   --black: black;
+  --transperant-white: rgb(255, 255, 255,0.7);
   --red: rgb(181, 25, 25);
   --light-black: rgb(0, 0, 0,0.4);
   --light-black2: rgb(0, 0, 0,0.1);
@@ -159,8 +160,16 @@ input[type='search']::placeholder{
 }
 .home_search_btn svg{
   pointer-events: none;
-  /*gotta set a width later*/
   width: 3rem;
+}
+.loading_screen{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: var(--transperant-white);
+  position: fixed;
+  top: 0;
 }
 
 /*Error dialog box*/
