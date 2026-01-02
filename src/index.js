@@ -1,3 +1,4 @@
+import { changeTempUnitsToC, changeTempUnitsToF } from './changeTempUnits';
 import { fetchAndLoad } from './fetchAndLoad';
 import { loadHome } from './loadHome';
 import './style.css';
@@ -43,3 +44,12 @@ body.addEventListener('click', (e) => {
         }
     }
 });
+body.addEventListener('change',(e)=>{
+    if(e.target.id === 'change_unit'){
+        if(e.target.checked){
+            changeTempUnitsToF();
+        } else if(!e.target.checked){
+            changeTempUnitsToC();
+        }
+    }
+})

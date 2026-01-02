@@ -57,7 +57,7 @@ export function loadDataPage(){
     changeUnitBtnHolder.classList.add('change_unit_btn_holder');
     const labelForChangeUnitCheckBox = document.createElement('label');
     labelForChangeUnitCheckBox.htmlFor = 'change_unit';
-    labelForChangeUnitCheckBox.textContent = 'Show temperature in °F';
+    labelForChangeUnitCheckBox.textContent = 'Show temperature in °F (default °C)';
     const changeUnitCheckBox = document.createElement('input');
     changeUnitCheckBox.type = 'checkbox';
     changeUnitCheckBox.name = 'change_unit';
