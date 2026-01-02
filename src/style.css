@@ -213,6 +213,7 @@ input[type='search']::placeholder{
   padding: 30px;
   border-radius: 10px;
   fill: var(--white);
+  position: relative;
 }
 .home_btn_svg_holder svg{
   width: 3rem;
@@ -252,6 +253,19 @@ input[type='search']::placeholder{
   align-items: center;
   gap: 20px;
   font-size: 1.2rem;
+}
+.credits_for_data_page{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  align-items: center;
+  gap: 10px;
+}
+.credits_for_data_page svg{
+  width: 1.5rem;
 }
 /*right*/
 .intro_top>.intro_temp_display{
@@ -317,4 +331,22 @@ input[type='search']::placeholder{
 ::-webkit-scrollbar-thumb{
   background-color: white;
   border-radius: 2px;
+}
+/*credits*/
+.credits{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  color: white;
+  fill: white;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--light-black3);
+}
+.credits svg{
+  width: 1.5rem;
 }
