@@ -37,6 +37,12 @@ body.addEventListener('click', (e) => {
                     loadHome();
                     break;
                 }
+                case 'close_error': {
+                    // function that loads home
+                    const errorDialog = document.querySelector('.error_dialog');
+                    errorDialog.close();
+                    break;
+                }
                 default: {
                     break;
                 }

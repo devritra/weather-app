@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 :root{
   --white: white;
   --black: black;
+  --red: rgb(181, 25, 25);
   --light-black: rgb(0, 0, 0,0.4);
   --light-black2: rgb(0, 0, 0,0.1);
   --light-black3: rgb(0, 0, 0,0.3);
@@ -77,7 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   --bg-color-search-btn-home: var(--light-black);
   --bg-color-search-home: var(--light-black3);
   /*error*/
-  --bg-color-header-error: var(--home-light-blue);
+  --bg-color-header-error: var(--red);
+  --color-header-error: var(--white);
   /*data page*/
   --bg-color-data-page-right: var(--light-black);
   --bg-color-data-page-left: var(--light-black);
@@ -181,9 +183,13 @@ input[type='search']::placeholder{
   text-align: start;
   font-size: 1.1rem;
   padding-left: 10px;
+  color: var(--color-header-error);
 }
 .error_header button{
   width: 30px;
+}
+.error_close_btn_svg{
+  pointer-events: none;
 }
 .error_text{
   padding: 10px;
