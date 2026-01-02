@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
 .main{
   height: 100vh;
 }
+.bg_image{
+  position: absolute;
+  z-index: -1;
+}
 
 /*----------home page styling----------*/
 .home_page_holder{
@@ -217,6 +221,9 @@ h1, h2, h3, h4, h5, h6 {
 .intro_top>.intro_temp_display{
   font-size: 6rem;
   text-align: center;
+}
+.intro_icon_holder{
+  display: flex;
 }
 .intro_icon_holder svg{
   width: 3.5rem;

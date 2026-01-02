@@ -1,6 +1,7 @@
 import { displayWeatherData } from "./displayWeatherData";
 import { fetchWeatherData } from "./fetchWeatherData";
 import { loadDataPage } from "./loadDataPage";
+import { showWeatherTheme } from "./showWeatherTheme";
 import { getCurrentPage } from "./storeStateOfPage";
 
 export async function fetchAndLoad(location) {
@@ -13,6 +14,7 @@ export async function fetchAndLoad(location) {
         if(currentPage === 'home'){
             loadDataPage();
         }
+        showWeatherTheme(response);
         displayWeatherData(response);
     }
     return;
