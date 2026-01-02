@@ -1,7 +1,7 @@
 import { setCurrentPage } from "./storeStateOfPage";
 import bgImageHome from './assets/images/bg-image-home.jpg';
 const main = document.querySelector('.main');
-// opacity set back to 0
+// opacity set back to 1
 main.style.opacity = '1';
 
 export function loadHome(){
