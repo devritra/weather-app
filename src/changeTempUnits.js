@@ -1,13 +1,13 @@
 function changeToF(elem){
-    const value = elem.textContent;
-    const newValue = (value * 9/5) + 32;
-    elem.textContent = (Math.round(newValue * 100) / 100).toFixed(1);
+    const value = elem.textContent.split(' ');
+    const newValue = (value[0] * 9/5) + 32;
+    elem.textContent = (Math.round(newValue * 100) / 100).toFixed(1) + ' ' + '°F';
     return;
 }
 function changeToC(elem){
-    const value = elem.textContent;
-    const newValue = (value - 32) * 5/9;
-    elem.textContent = (Math.round(newValue * 100) / 100).toFixed(1);
+    const value = elem.textContent.split(' ');
+    const newValue = (value[0] - 32) * 5/9;
+    elem.textContent = (Math.round(newValue * 100) / 100).toFixed(1) + ' ' + '°C';
     return;
 }
 export function changeTempUnitsToF(){

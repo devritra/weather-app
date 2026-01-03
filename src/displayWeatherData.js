@@ -156,11 +156,12 @@ export function displayWeatherData(response){
     if(response.days[0].temp === null){
         introTempDisplay.textContent = '-';
     } else {
-        introTempDisplay.textContent = response.days[0].temp;
+        introTempDisplay.textContent = response.days[0].temp + ' ' + '°C';
     }
 
     const locationName = document.querySelector('.intro_location_info_holder>p');
-    locationName.textContent = response.address;
+    const firstLetter = response.address.charAt(0).toUpperCase();
+    locationName.textContent = firstLetter + (response.address.split('').slice(1).join(''));
 
     const locationDateAndTime = document.querySelector('.intro_location_info_holder>p+p');
     if(response.days[0].datetime === null){
@@ -188,49 +189,49 @@ export function displayWeatherData(response){
     if(response.days[0].tempmax === null){
         tempMaxCardDataValue.textContent = '-';
     } else {
-        tempMaxCardDataValue.textContent = response.days[0].tempmax;
+        tempMaxCardDataValue.textContent = response.days[0].tempmax + ' ' + '°C';
     }
 
     const tempMinCardDataValue = document.querySelector('.tempmin_card>.data_value');
     if(response.days[0].tempmin === null){
         tempMinCardDataValue.textContent = '-';
     } else {
-        tempMinCardDataValue.textContent = response.days[0].tempmin;
+        tempMinCardDataValue.textContent = response.days[0].tempmin + ' ' + '°C';
     }
 
     const tempavgCardDataValue = document.querySelector('.tempavg_card>.data_value');
     if(response.days[0].temp === null){
         tempavgCardDataValue.textContent = '-';
     } else {
-        tempavgCardDataValue.textContent = response.days[0].temp;
+        tempavgCardDataValue.textContent = response.days[0].temp + ' ' + '°C';
     }
     
     const feelsLikeCardDataValue = document.querySelector('.feelslike_card>.data_value');
     if(response.days[0].feelslike === null){
         feelsLikeCardDataValue.textContent = '-';
     } else {
-        feelsLikeCardDataValue.textContent = response.days[0].feelslike;
+        feelsLikeCardDataValue.textContent = response.days[0].feelslike + ' ' + '°C';
     }
 
     const humidityCardDataValue = document.querySelector('.humidity_card>.data_value');
     if(response.days[0].humidity === null){
         humidityCardDataValue.textContent = '-';
     } else {
-        humidityCardDataValue.textContent = response.days[0].humidity;
+        humidityCardDataValue.textContent = response.days[0].humidity + ' ' + '%';
     }
 
     const cloudCoverCardDataValue = document.querySelector('.cloud_cover_card>.data_value');
     if(response.days[0].cloudcover === null){
         cloudCoverCardDataValue.textContent = '-';
     } else {
-        cloudCoverCardDataValue.textContent = response.days[0].cloudcover;
+        cloudCoverCardDataValue.textContent = response.days[0].cloudcover + ' ' + '%';
     }
 
     const visibilityCardDataValue = document.querySelector('.visbility_card>.data_value');
     if(response.days[0].visibility === null){
         visibilityCardDataValue.textContent = '-';
     } else {
-        visibilityCardDataValue.textContent = response.days[0].visibility;
+        visibilityCardDataValue.textContent = response.days[0].visibility + ' ' + 'km';
     }
 
     const PrecipitationTypeCardDataValue = document.querySelector('.precipitation_type_card>.data_value');
@@ -244,56 +245,56 @@ export function displayWeatherData(response){
     if(response.days[0].precipprob === null){
         PrecipitationChanceCardDataValue.textContent = '-';
     } else {
-        PrecipitationChanceCardDataValue.textContent = response.days[0].precipprob;
+        PrecipitationChanceCardDataValue.textContent = response.days[0].precipprob + ' ' + '%';
     }
 
     const PrecipitationVolCardDataValue = document.querySelector('.precipitation_vol_card>.data_value');
     if(response.days[0].precip === null){
         PrecipitationVolCardDataValue.textContent = '-';
     } else {
-        PrecipitationVolCardDataValue.textContent = response.days[0].precip;
+        PrecipitationVolCardDataValue.textContent = response.days[0].precip + ' ' + 'mm';
     }
 
     const PrecipitationCoverCardDataValue = document.querySelector('.precipitation_cover_card>.data_value');
     if(response.days[0].precipcover === null){
         PrecipitationCoverCardDataValue.textContent = '-';
     } else {
-        PrecipitationCoverCardDataValue.textContent = response.days[0].precipcover;
+        PrecipitationCoverCardDataValue.textContent = response.days[0].precipcover + ' ' + '%';
     }
 
     const snofallCardDataValue = document.querySelector('.snowfall_card>.data_value');
     if(response.days[0].snow === null){
         snofallCardDataValue.textContent = '-';
     } else {
-        snofallCardDataValue.textContent = response.days[0].snow;
+        snofallCardDataValue.textContent = response.days[0].snow + ' ' + 'cm';
     }
 
     const snowDepthCardDataValue = document.querySelector('.snow_depth_card>.data_value');
     if(response.days[0].snowdepth === null){
         snowDepthCardDataValue.textContent = '-';
     } else {
-        snowDepthCardDataValue.textContent = response.days[0].snowdepth;
+        snowDepthCardDataValue.textContent = response.days[0].snowdepth + ' ' + 'cm';
     }
 
     const windSpeedCardDataValue = document.querySelector('.wind_speed_card>.data_value');
     if(response.days[0].windspeed === null){
         windSpeedCardDataValue.textContent = '-';
     } else {
-        windSpeedCardDataValue.textContent = response.days[0].windspeed;
+        windSpeedCardDataValue.textContent = response.days[0].windspeed + ' ' + 'km/h';
     }
 
     const windGustCardDataValue = document.querySelector('.wind_gust_card>.data_value');
     if(response.days[0].windgust === null){
         windGustCardDataValue.textContent = '-';
     } else {
-        windGustCardDataValue.textContent = response.days[0].windgust;
+        windGustCardDataValue.textContent = response.days[0].windgust + ' ' + 'km/h';
     }
 
     const windDirectionCardDataValue = document.querySelector('.wind_direction_card>.data_value');
     if(response.days[0].winddir === null){
         windDirectionCardDataValue.textContent = '-';
     } else {
-        windDirectionCardDataValue.textContent = response.days[0].winddir;
+        windDirectionCardDataValue.textContent = response.days[0].winddir + ' ' + '°';
     }
 
     const sunriseCardDataValue = document.querySelector('.sunrise_card>.data_value');
